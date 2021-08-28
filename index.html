@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Baitapluyenmang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <h4 class="mx-3">Nhập các số nguyên</h4>
+    <input id="inputNumber" type="number" class="mx-3 form-control">
+    <button id="btnThemSo" class="my-3 mx-3 btn btn-success rounded-pill" type="button">Thêm số</button>
+    <p class="col-6 mx-3 alert alert-warning" id="hienthi"></p>
+
+    <div class="item">
+        <input type="checkbox" id="A" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="A">1.Tổng các số dương</label>
+        <ul>
+            <li><button id="btnTongSoDuong" type="button" class="mx-3 btn btn-success rounded-pill">Tính
+                    tổng</button></li>
+            <li>
+                <p class="mx-3 col-4 alert alert-warning" id="hienthi1"></p>
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="B" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="B">2.Đếm các số dương</label>
+        <ul>
+            <li><button id="btnDemSoDuong" type="button" class="mx-3 btn btn-success rounded-pill">Đếm
+                    số</button></li>
+            <li>
+                <p class="mx-3 col-6 alert alert-warning" id="hienthi2"></p>
+            </li>
+        </ul>
+
+    </div>
+    <div class="item">
+        <input type="checkbox" id="C" />
+        <img src="images/Arrow.png" class="arrow"><label for="C">3.Tìm số nhỏ nhất</label>
+
+        <ul>
+            <button id="btnTimSoMin" type="button" class="mx-3 btn btn-success rounded-pill">Tìm số</button>
+            <p class="mx-3 col-6 alert alert-warning" id="hienthi3"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="D" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="D">4.Tìm số dương nhỏ nhất</label>
+        <ul>
+            <button id="btnTimSoDuongMin" type="button" class="mx-3 btn btn-success rounded-pill">Tìm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthi4"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="E" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="E">5.Tìm số chẵn cuối cùng</label>
+        <ul>
+            <button id="btnTimSoChan" type="button" class="mx-3 btn btn-success rounded-pill">Tìm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthi5"></p>
+        </ul>
+    </div>
+
+    <div class="item">
+        <input type="checkbox" id="F" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="F">6.Đổi chỗ</label>
+        <ul>
+            <input id="inputViTri1" type="number" class="mx-3 form-control" placeholder="Nhập vị trí 1">
+            <input id="inputViTri2" type="number" class="mx-3 form-control" placeholder="Nhập vị trí 2">
+            <button id="btnDoiCho" type="button" class="mx-3 btn btn-success rounded-pill">Đổi chỗ</button>
+            <p class="mx-3 col-4 alert alert-warning" id="hienthi6"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="G" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="G">7.Sắp xếp tăng dần</label>
+        <ul>
+            <button id="btnSapXep" type="button" class="mx-3 btn btn-success rounded-pill">Sắp xếp</button>
+            <p class="mx-3 col-4 alert alert-warning" id="hienthi7"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="H" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="H">8.Tìm số nguyên tố đầu tiên</label>
+        <ul>
+            <button id="btnTimSoNguyenTo" type="button" class="mx-3 btn btn-success rounded-pill">Tìm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthi8"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="I" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="I">9.Đếm số nguyên</label>
+        <ul>
+            <input id="inputNumber1" type="number" class="mx-3 form-control">
+            <button id="btnThemSo1" class="mx-3 btn btn-success rounded-pill" type="button">Thêm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthiSo"></p>
+        </ul>
+        <ul>
+            <button id="btnDemSoNguyen" type="button" class="mx-3 btn btn-success rounded-pill">Đếm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthi9"></p>
+        </ul>
+    </div>
+    <div class="item">
+        <input type="checkbox" id="J" />
+        <img src="images/Arrow.png" class="arrow">
+        <label for="J">10.Đếm số âm và số dương</label>
+        <ul>
+            <button id="btnDemSoAmDuong" type="button" class="mx-3 btn btn-success rounded-pill">Đếm số</button>
+            <p class="mx-3 alert alert-warning" id="hienthi10"></p>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
